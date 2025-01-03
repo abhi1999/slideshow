@@ -1,1 +1,25 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Slideshow</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="PHOTO_URL_1" alt="Photo 1"></div>
+      <div class="swiper-slide"><img src="PHOTO_URL_2" alt="Photo 2"></div>
+      <div class="swiper-slide"><img src="PHOTO_URL_3" alt="Photo 3"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  </script>
+</body>
+</html>
